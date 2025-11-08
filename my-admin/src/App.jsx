@@ -11,7 +11,7 @@ const App = () =>
 (
 <Admin dataProvider = {dataProvider} > 
   <Resource name = 'Author' list={AuthorList} edit={AuthorEdit} create = {AuthorCreate} show={AuthorShow}/>  
-  <Resource name = 'Book' list={BookList} edit={BookEdit} create = {BookCreate} show={BookShow}/>
+  <Resource name = 'Book' list={BookList} edit={BookEdit} create = {BookCreate} show={BookShow}/> 
 </Admin>
 );
 export default App;
