@@ -5,7 +5,6 @@ import { NumberField, Show, SimpleShowLayout, TextField } from 'react-admin';
 export const GeneraluserShow = () => (
     <Show>
         <SimpleShowLayout>
-            <TextField source="id" />
             <NumberField source="profileID" />
             <NumberField source="numberOfBooksRead" />
             <TextField source="favouriteAuthor" />
@@ -16,7 +15,6 @@ export const GeneraluserShow = () => (
 export const GeneraluserCreate = () => (
     <Credit>
         <SimpleForm>
-            <TextInput source="id" />
             <NumberInput source="profileID" />
             <NumberInput source="numberOfBooksRead" />
             <TextInput source="favouriteAuthor" />

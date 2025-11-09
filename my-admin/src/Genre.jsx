@@ -5,7 +5,6 @@ import { Show, SimpleShowLayout, TextField } from 'react-admin';
 export const GenreShow = () => (
     <Show>
         <SimpleShowLayout>
-            <TextField source="id" />
             <TextField source="name" />
         </SimpleShowLayout>
     </Show>
@@ -14,7 +13,6 @@ export const GenreShow = () => (
 export const GenreCreate = () => (
     <Create>
         <SimpleForm>
-            <TextInput source="id" />
             <TextInput source="name" />
         </SimpleForm>
     </Create>

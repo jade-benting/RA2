@@ -5,7 +5,6 @@ import { DateField, NumberField, Show, SimpleShowLayout, TextField } from 'react
 export const BookShow = () => (
     <Show>
         <SimpleShowLayout>
-            <TextField source="id" />
             <DateField source="title" />
             <TextField source="description" />
             <TextField source="coverImageURL" />
@@ -20,7 +19,6 @@ export const BookShow = () => (
 export const BookCreate = () => (
     <Create>
         <SimpleForm>
-            <TextInput source="id" />
             <TextInput source="title" />
             <TextInput source="description" />
             <TextInput source="coverImageURL" />
