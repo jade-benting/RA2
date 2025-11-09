@@ -1,7 +1,19 @@
 import { DataTable, DateField, List } from 'react-admin';
 import { DateInput, Edit, NumberInput, SimpleForm, TextInput, Create } from 'react-admin';
-import {NumberField, Show, SimpleShowLayout, TextField } from 'react-admin';
+import {NumberField, Show, SimpleShowLayout, TextField, SelectInput} from 'react-admin';
 
+export const catergoryFilters = [
+  <TextInput label="SearchName" source="fullName" alwaysOn/>,
+    <SelectInput label="SelectName"
+    source="fullName"
+    resettable
+    choices={[
+        {id: "Michael Chen", name:"Michael Chen"},
+        {id: "Jane Mitchell", name:"Jane Mitchell"}
+    ]}
+    alwaysOn
+    />
+];
 export const AuthorShow = () => (
     <Show>
         <SimpleShowLayout>
@@ -41,7 +53,7 @@ export const AuthorEdit = () => (
 
 
 export const AuthorList = () => (
-    <List>
+    <List filters={catergoryFilters}>
         <DataTable>
             <DataTable.Col source="id" />
             <DataTable.Col source="fullName" />
